@@ -280,7 +280,7 @@ A aplicação implementa um sistema consistente de tratamento de erros.
 
 O código segue as boas práticas recomendadas para o ecossistema Node.js.
 
-👥 Autor
+👥 
 
 Projeto: Desenvolvido para a disciplina TAD0203 - Gestão da Qualidade de Software.
 
