@@ -31,7 +31,7 @@ Cypress (Testes E2E)
 A organização dos arquivos segue uma estrutura lógica para facilitar a manutenção e escalabilidade:
 
 projeto-gqs-livros-autores/
-├── src/
+```├── src/
 │   ├── controllers/          # Lógica de controle (MVC)
 │   │   ├── autorController.js
 │   │   └── livroController.js
@@ -68,6 +68,7 @@ projeto-gqs-livros-autores/
 ├── cypress.config.js
 ├── .env                     # Arquivo para variáveis de ambiente
 └── README.md
+```
 🚀 Instalação e Configuração
 
 Pré-requisitos:
@@ -79,22 +80,24 @@ PostgreSQL (v12 ou superior)
 NPM ou Yarn
 
 1. Clone o repositório:
-
+```
 Bash
 
 git clone <url-do-repositorio>
 cd projeto-gqs-livros-autores
+```
 2. Instale as dependências do projeto:
-
+```
 Bash
 
 npm install
+```
 3. Configure o Banco de Dados:
 
 Garanta que seu serviço PostgreSQL esteja ativo.
 
 Crie o banco de dados e as tabelas executando o script SQL.
-
+```
 Bash
 
 # Conecte-se ao psql com um superusuário (ex: postgres)
@@ -106,17 +109,18 @@ psql -U postgres
 # Alternativamente, execute o comando manualmente:
 CREATE DATABASE livros_autores_db;
 Renomeie o arquivo .env.example para .env e preencha com suas credenciais:
-
+```
 Snippet de código
-
+```
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=livros_autores_db
 DB_USER=postgres
 DB_PASSWORD=sua_senha_aqui
 PORT=3000
+```
 4. Inicie o servidor:
-
+```
 Bash
 
 # Para ambiente de desenvolvimento com hot-reload
@@ -125,11 +129,11 @@ npm run dev
 # Para ambiente de produção
 npm start
 A aplicação estará rodando em http://localhost:3000.
-
+```
 🧪 Executando os Testes
 
 Testes Unitários e de Integração com Jest:
-
+```
 Bash
 
 # Rodar a suíte completa de testes
@@ -151,6 +155,7 @@ npm run cypress:open
 
 # Executar os testes em modo headless (via terminal)
 npm run cypress:run
+```
 📋 Funcionalidades
 
 API Endpoints:
